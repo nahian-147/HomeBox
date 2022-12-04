@@ -1,0 +1,43 @@
+{% load static %}
+
+<html>
+  <head>
+    <title>
+      All Videos
+    </title>
+
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    Hello There !!!
+
+
+    <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster=""
+    data-setup="{}"
+  >
+    <source src="{% static 'homeBox/videos/video.mp4' %}" type="video/mp4" />
+    <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.min.js" integrity="sha512-QJy1NRNGKQoHmgJ7v+45V2uDbf2me+xFoN9XewaSKkGwlqEHyqLVaLtVm93FzxVCKnYEZLFTI4s6v0oD0FbAlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </body>
+</html>
